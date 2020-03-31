@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <title>New Student</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+                <a class="navbar-brand" href="#">Fee-MS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Student
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="students.html">Students</a>
+                        <a class="dropdown-item" href="NewStudents.html">New Student</a>
+                        <a class="dropdown-item" href="StudentLeave.html">Student leave/Struck-off</a>
+                        <a class="dropdown-item" href="StudentPromotion.html">Student Promotion/Demotion</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Fee
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="FeeDueDate.html">Fee Due Date</a>
+                              <a class="dropdown-item" href="CreateVoucher.html">Create Voucher</a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Student Ledger</a>
+                    </li>
+                  </ul>
+                  <ul class ="nav navbar-nav navbar-right">
+                    <li class = "nav-item">
+                      <a class = "nav-link" href="ChangePassword.html">Change Password </a>
+                  </li>
+                  <li class = "nav-item">
+                      <a class = "nav-link" href="LoginPage.html">Log Out</a>
+                  </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <h1 class = "text-center display-5 mt-3">New Student Information</h1>
+
+              <form Method = "POST">
+
+                         
+              <div class="container mb-5 bg-light pb-3">
+                <fieldset class="form col border border-primary">  
+                  <legend style="width:135px">Student Info</legend>
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-3">First Name:</label>
+                        <input  name = "fName"
+                                id="fname"
+                                type="text" 
+                                placeholder="Saad" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-3">Last Name:</label>
+                      <input  class = "pl-2"
+                              name = "LName"
+                              id="lname"
+                              type="text" 
+                              placeholder="Amir" required/>
+                    </div>
+                  </div>
+                  
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-3">CNIC # :</label>
+                        <input  name = "cnicno"
+                                id="cnicno"
+                                type="text" 
+                                placeholder="12345-6789123-4" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-3">Date-of-Birth:</label>
+                      <input  class = "pl-2"
+                              name = "DOB"
+                              id="DOB"
+                              type="text" 
+                              placeholder="DD/MM/YYYY" required/>
+                    </div>
+                  </div>
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-3">Age:</label>
+                        <input  name = "age"
+                                id="age"
+                                type="text" 
+                                placeholder="10" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-3">Gender:</label>
+                      <input  class = "pl-2"
+                              name = "gender"
+                              id="gender"
+                              type="text" 
+                              placeholder="M" required/>
+                    </div>
+                  </div>
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-3">Nationality:</label>
+                        <input  name = "Nationality"
+                                id="Nationality"
+                                type="text" 
+                                placeholder="Pakistan" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-3">Religion:</label>
+                      <input  class = "pl-2"
+                              name = "religion"
+                              id="religion"
+                              type="text" 
+                              placeholder="Islam" required/>
+                    </div>
+                  </div>
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "ml-4 pl-1">
+                        <label >Address:</label>
+                        <input  class = "ml-5"
+                                style="width:750px"
+                                name = "Address"
+                                id="Address"
+                                type="text" 
+                                placeholder="Attar Hostels,block-2,H-12,Islamabad" required/>
+                    </div>
+                  </div>
+
+                </fieldset>
+
+              </div>
+
+              <div class="container mb-5 bg-light pb-3">
+                <fieldset class="form col border border-primary">  
+                  <legend style="width:135px">Class Info</legend>
+                  
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-4">Joining Class:</label>
+                        <input  class = "pl-2"
+                                name = "age"
+                                id="age"
+                                type="text" 
+                                placeholder="5" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-4">Joining Section:</label>
+                      <input  class = "pl-2"
+                              name = "gender"
+                              id="gender"
+                              type="text" 
+                              placeholder="Red" required/>
+                    </div>
+                  </div>
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "col-6">
+                        <label class = "col-4">Previous Class:</label>
+                        <input  class = "pl-2"
+                                name = "Nationality"
+                                id="Nationality"
+                                type="text" 
+                                placeholder="4" required/>
+                    </div>
+
+                    <div class = "col-6">
+                      <label class = "col-4">Previous Section:</label>
+                      <input  class = "pl-2"
+                              name = "religion"
+                              id="religion"
+                              type="text" 
+                              placeholder="Red" required/>
+                    </div>
+                  </div>
+
+                  <div class = "row px-3 mb-2">
+                    <div class = "ml-4 pl-1">
+                        <label >Previous School Name:</label>
+                        <input  class = "ml-5"
+                                style="width:687px"
+                                name = "Address"
+                                id="Address"
+                                type="text" 
+                                placeholder="Britain International School System" required/>
+                    </div>
+                  </div>
+
+                </fieldset>
+
+              </div>
+
+              <div class="container mb-5 bg-light pb-3">
+                  <fieldset class="col border border-primary">  
+                    <legend style="width:150px">Guardian Info</legend>
+
+                    <div class = "row px-3 mb-2">
+                      <div class = "col-6">
+                          <label class = "col-3">First Name:</label>
+                          <input  name = "ffName"
+                                  id="ffname"
+                                  type="text" 
+                                  placeholder="Amir" required/>
+                      </div>
+  
+                      <div class = "col-6">
+                        <label class = "col-3">Last Name:</label>
+                        <input  class = "pl-2"
+                                name = "fLName"
+                                id="flname"
+                                type="text" 
+                                placeholder="Zulfiqar" required/>
+                      </div>
+                    </div>
+
+                    <div class = "row px-3 mb-2">
+                      <div class = "col-6">
+                          <label class = "col-3">CNIC # :</label>
+                          <input  name = "cnicno"
+                                  id="cnicno"
+                                  type="text" 
+                                  placeholder="12345-6789123-4" required/>
+                      </div>
+  
+                      <div class = "col-6">
+                        <label class = "col-3">Occupation:</label>
+                        <input  class = "pl-2"
+                                name = "occupation"
+                                id="occupation"
+                                type="text" 
+                                placeholder="Banker" required/>
+                      </div>
+                    </div>
+
+                    <div class = "row px-3 mb-2">
+                      <div class = "col-6">
+                          <label class = "col-3">Mobile # :</label>
+                          <input  name = "mobile no"
+                                  id="mobile_no"
+                                  type="text" 
+                                  placeholder="03xx-3xxxxxx" required/>
+                      </div>
+  
+                      <div class = "col-6">
+                        <label class = "col-3">LandLine #:</label>
+                        <input  class = "pl-2"
+                                name = "landlineno"
+                                id="landline_no"
+                                type="text" 
+                                placeholder="061-6xxxxxx" required/>
+                      </div>
+                    </div>
+
+                    <div class = "row px-3 mb-2">
+                      <div class = "col-6">
+                          <label class = "col-3">Nationality:</label>
+                          <input  name = "fNationality"
+                                  id="fNationality"
+                                  type="text" 
+                                  placeholder="Pakistan" required/>
+                      </div>
+  
+                      <div class = "col-6">
+                        <label class = "col-3">Religion:</label>
+                        <input  class = "pl-2"
+                                name = "freligion"
+                                id="freligion"
+                                type="text" 
+                                placeholder="Islam" required/>
+                      </div>
+                    </div>
+
+                    <div class = "row px-3 mb-2">
+                      <div class = "ml-4 pl-1">
+                          <label >Address:</label>
+                          <input  class = "ml-5"
+                                  style="width:750px"
+                                  name = "Address"
+                                  id="Address"
+                                  type="text" 
+                                  placeholder="Attar Hostels,block-2,H-12,Islamabad" required/>
+                      </div>
+                    </div>
+                  </fieldset>
+                    </div>
+  
+                    <div class="container mb-5 bg-light pb-3">
+                      <fieldset class="col border border-primary">  
+                        <legend style="width:160px">Admission Info</legend>
+    
+                        <div class = "row px-3 mb-2 ">
+                          <div class = "col-6">
+                              <label class = "col-4">Admission By:</label>
+                              <input  name = "admissionby"
+                                      id="admission_by"
+                                      type="text" 
+                                      placeholder="Ma'am Sadia" required/>
+                          </div>
+      
+                          <div class = "col-6">
+                            <label class = "col-4">Admission Date:</label>
+                            <input  class = "pl-2"
+                                    name = "adate"
+                                    id="adate"
+                                    type="text" 
+                                    placeholder="DD/MM/YYYY" required/>
+                          </div>
+                        </div>
+    
+                        <div class = "row px-3 mb-2">
+                          <div class = "col-6">
+                              <label class = "col-4">Tution Fee :</label>
+                              <input  name = "tutionfee"
+                                      id="tution_fee"
+                                      type="text" 
+                                      placeholder="5000" required/>
+                          </div>
+
+                          <div class = "col-6">
+                            <label class = "col-4">Security:</label>
+                            <input  class = "pl-2"
+                                    name = "security"
+                                    id="security"
+                                    type="text" 
+                                    placeholder="5000" required/>
+                          </div>
+                        </div>
+
+                        <div class = "row px-3 mb-2">
+                          <div class = "col-6">
+                              <label class = "col-4">Admission Fee :</label>
+                              <input  name = "admissionfee"
+                                      id="admission_fee"
+                                      type="text" 
+                                      placeholder="5000" required/>
+                          </div>
+
+                          <div class = "col-6">
+                            <label class = "col-4">Reference:</label>
+                            <input  class = "pl-2"
+                                    name = "refName"
+                                    id="refname"
+                                    type="text" 
+                                    placeholder="Hussain" required/>
+                          </div>
+                        </div>
+
+                        <div class = "row px-3 mb-2">
+                          <div class = "ml-4 pl-1">
+                              <label >Remarks:</label>
+                              <input  style="width:900px"
+                                      name = "remarks"
+                                      id="remarks"
+                                      type="text" 
+                                      placeholder="" required/>
+                          </div>
+                        </div>
+
+                        <div class = "mb-2"></div>
+                        <div class = "row my-3">
+                              <span class = "col-3"></span>
+                              <button class="col-2 btn btn-info btn-lg my-1" >Load</button>
+                              <span class = "col-3"></span>
+                              <button class="col-2 btn btn-info btn-lg my-1" >Clear</button>
+                        </div>
+                        
+                        </div>
+
+                        </fieldset>
+  
+                </div>
+
+              </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
